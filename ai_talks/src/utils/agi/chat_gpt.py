@@ -4,7 +4,6 @@ from typing import List  # NOQA: UP035
 import openai
 import streamlit as st
 
-
 @st.cache_data()
 def create_gpt_completion(ai_model: str, messages: List[dict]) -> dict:
     try:
